@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    width: 60vw;
+    z-index: 2;
+}
+
+.head>div:nth-of-type(2) {
+    margin: 2%;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+
+    font-size: 5.5rem;
+}
+
+.head>div:nth-of-type(3){
+    letter-spacing: 1px;
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    transform: translateZ(-5px) scale(1.5);
+    object-fit:cover;
+    z-index: 2;
+}

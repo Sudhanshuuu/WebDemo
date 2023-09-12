@@ -1,0 +1,26 @@
+.body{
+    margin-top: 25vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows:auto;
+    place-items: center;
+}
+
+@media  only screen and (max-width:850px) {
+
+    .body{
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+}
+
+@media  only screen and (max-width:750px) {
+
+    .body{
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+  
+}

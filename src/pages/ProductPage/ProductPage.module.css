@@ -1,0 +1,101 @@
+.box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 15vh;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    
+
+   padding: 2%;
+   background-color: rgba(255, 255, 255, 0.753);
+    width: 80vw;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.intro{
+    text-align: center;
+    font-weight: bold;
+}
+
+.intro>img{
+    border-radius: 15px;
+    width: 10vw;
+    height: 65vh;
+
+}
+
+.container button{
+    margin: 1%;
+    padding: 10px 40px;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    font-size: 1rem;
+
+}
+
+
+.container div>p{
+    margin-left: 5%;
+    font-size: 1rem;
+    word-spacing: 5px;
+
+}
+
+.container ul{
+    width: 100%;
+    height: 100%;
+}
+.container button:hover{
+    background-color:rgba(0, 0, 0, 0.858);
+    color: white;
+}
+.active{
+    background-color: rgba(0, 0, 0, 0.858);
+    color: white;
+}  
+
+@media  only screen and (max-width:1000px) {
+    .intro>img{
+        margin-bottom: 5%;
+        height: 50vh;
+        width: 15vw;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media  only screen and (max-width:800px) {
+
+    .intro>img{
+        width: 15vw;
+    }
+
+  
+}
+
+@media  only screen and (max-width:600px) {
+    .intro>img{
+        width: 30vw;
+    }
+
+}
